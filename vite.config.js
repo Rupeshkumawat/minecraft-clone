@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 
-export default defineConfig(({ command }) => ({
-  // Only use the subpath when building for GitHub Pages
-  base: command === 'build' ? '/aaa-minecraft-clone/' : '/',
-}));
+export default defineConfig({
+  base: '/minecraft-clone/', // <-- Change this if you named your repo differently
+});
